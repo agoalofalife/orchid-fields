@@ -1,0 +1,13 @@
+{
+    "name": "agoalofalife/orchid-fields",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "agoalofalife",
+            "email": "agoalofalife@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
