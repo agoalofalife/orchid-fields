@@ -9,5 +9,19 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "orchid/platform": "^10.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "agoalofalife\\Orchid\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "agoalofalife\\Orchid\\OrchidFieldsServiceProvider"
+            ],
+        }
+    }
 }
