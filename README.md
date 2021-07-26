@@ -24,6 +24,9 @@ Next, you should publish resources files using the `vendor:publish` Artisan comm
 <a href="https://raw.githubusercontent.com/agoalofalife/orchid-fields/main/.github/IMAGES/range.png">
   <img src="https://raw.githubusercontent.com/agoalofalife/orchid-fields/main/.github/IMAGES/range.png" alt="range" align="center" />
 </a>
+<a href="https://raw.githubusercontent.com/agoalofalife/orchid-fields/main/.github/IMAGES/range.png">
+  <img src="https://raw.githubusercontent.com/agoalofalife/orchid-fields/main/.github/IMAGES/range-code.png" alt="range" align="center" />
+</a>
 
 
 ## Rate
@@ -32,3 +35,7 @@ Next, you should publish resources files using the `vendor:publish` Artisan comm
 <a href="https://raw.githubusercontent.com/agoalofalife/orchid-fields/main/.github/IMAGES/rate.png">
   <img src="https://raw.githubusercontent.com/agoalofalife/orchid-fields/main/.github/IMAGES/rate.png" alt="range" align="center" />
 </a>
+<a href="https://raw.githubusercontent.com/agoalofalife/orchid-fields/main/.github/IMAGES/range.png">
+  <img src="https://raw.githubusercontent.com/agoalofalife/orchid-fields/main/.github/IMAGES/rate-code.png" alt="range" align="center" />
+</a>
+
