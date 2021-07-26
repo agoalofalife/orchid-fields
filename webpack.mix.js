@@ -10,13 +10,9 @@ const mix = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
+ß
+mix.js([
+    'resources/js/orchid_fields.js',
+    'resources/js/vendor/rater'
+], 'public/js/orchid_fields.js');
 
-// mix.js('resources/js/app.js', 'public/js')
-//     .postCss('resources/css/app.css', 'public/css', [
-//         //
-//     ]);
-// mix.js('resources/js/rater.js', 'public/js');
-mix.js('resources/js/orchid_fields.js', 'public/js');
-// mix.styles([
-//     'resources/css/components/progress-board.css'
-// ], 'public/css/components.css')

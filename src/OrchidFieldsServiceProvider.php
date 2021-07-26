@@ -6,7 +6,6 @@ namespace agoalofalife\Orchid;
 
 use Illuminate\Support\ServiceProvider;
 use Orchid\Platform\Dashboard;
-use Orchid\Platform\Providers\FoundationServiceProvider;
 
 class OrchidFieldsServiceProvider extends ServiceProvider
 {
@@ -19,6 +18,8 @@ class OrchidFieldsServiceProvider extends ServiceProvider
         $this->loadViewsFrom($path, 'platform-fields');
 
         $dashboard->registerResource('scripts', '/js/orchid_fields.js');
+        $dashboard->registerResource('scripts', 'https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js');
+        $dashboard->registerResource('stylesheets', 'https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css');
         $this->registerAssets();
     }
 
