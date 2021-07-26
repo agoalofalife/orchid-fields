@@ -10,7 +10,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "orchid/platform": "^10.10"
+        "orchid/platform": "^10.11"
     },
     "autoload": {
         "psr-4": {
@@ -21,7 +21,7 @@
         "laravel": {
             "providers": [
                 "agoalofalife\\Orchid\\OrchidFieldsServiceProvider"
-            ],
+            ]
         }
     }
 }
