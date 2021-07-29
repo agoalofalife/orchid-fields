@@ -19,8 +19,8 @@ class ImageZoom extends Field
      * @var array
      */
     protected $attributes = [
-        'size' => 100,
-        'widthPercent' => 70
+        'zoomPercent' => 100, // how many percent zoom
+        'widthPercent' => 70 // value for show
     ];
 
     /**

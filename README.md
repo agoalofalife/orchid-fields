@@ -58,3 +58,19 @@ Rate::make('rate')
     ->haveRated(5);
 ```
 
+
+## Image Zoom
+
+#### You can watch full [documentation](https://github.com/kingdido999/zooming)
+
+
+Example:
+
+```php
+use agoalofalife\Orchid\Fields\ImageZoom;
+
+ImageZoom::make('image')
+    ->zoomPercent(100)
+    ->widthPercent(70);
+```
+

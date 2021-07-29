@@ -2,8 +2,9 @@
 import Zooming from 'zooming'
 export default class extends window.Controller {
     connect() {
+        console.log(this.data.get('zoompercent') || 100 + '%', this.data.get('zoompercent') )
         const zooming = new Zooming({
-            customSize: this.data.get('size') || 100 + '%'
+            customSize: this.data.get('zoompercent') || 100 + '%'
         })
 
         zooming.listen(this.element.querySelector('.image-zoom'))
