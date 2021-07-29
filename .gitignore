@@ -6,7 +6,6 @@ coverage.xml
 _ide_helper.php
 composer.lock
 build
-vendor
 .DS_Store
 .lock
 node_modules

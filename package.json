@@ -8,5 +8,9 @@
     "hot": "mix watch --hot",
     "prod": "npm run production",
     "production": "mix --production"
+  },
+  "dependencies": {
+    "laravel-mix": "^6.0.27",
+    "zooming": "^2.1.1"
   }
 }
