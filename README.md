@@ -55,7 +55,7 @@ use agoalofalife\Orchid\Fields\Rate;
 Rate::make('rate')
     ->count(4)
     ->readonly(true)
-    ->haveRated(5);
+    ->value(5);
 ```
 
 
