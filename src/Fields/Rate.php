@@ -32,6 +32,6 @@ class Rate extends Field
     protected $inlineAttributes = [
       'title',
       'name',
-      'haveRated'
+      'value'
     ];
 }
