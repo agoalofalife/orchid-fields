@@ -23,7 +23,9 @@ class Range extends Field
         'max' => 1000,
         'from' => 0,
         'to' => 1000,
-        'hasGrid' => false
+        'hasGrid' => false,
+        'type' => 'double',
+        'skin' => 'flat',
     ];
 
     /**
