@@ -70,6 +70,7 @@ Example:
 use agoalofalife\Orchid\Fields\ImageZoom;
 
 ImageZoom::make('image')
+    ->value('https://host/picture.jpg')
     ->zoomPercent(100)
     ->widthPercent(70);
 ```
