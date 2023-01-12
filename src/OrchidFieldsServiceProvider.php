@@ -17,7 +17,7 @@ class OrchidFieldsServiceProvider extends ServiceProvider
         $path = dirname(__DIR__, 1) . '/resources/views/';
         $this->loadViewsFrom($path, 'platform-fields');
 
-        $dashboard->registerResource('scripts', '/js/orchid_fields.js');
+        $dashboard->registerResource('scripts', '/vendor/orchid-fields/js/orchid_fields.js');
         $dashboard->registerResource('scripts', 'https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js');
         $dashboard->registerResource('stylesheets', 'https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css');
         $this->registerAssets();
@@ -30,9 +30,9 @@ class OrchidFieldsServiceProvider extends ServiceProvider
      */
     protected function registerAssets(): self
     {
-        $fieldsPath =  dirname(__DIR__, 1) . '/public/js/';
+        $sourcePath =  dirname(__DIR__, 1) . '/public/js/';
         $this->publishes([
-            $fieldsPath   => public_path('js/')
+            $sourcePath   => public_path('vendor/orchid-fields/js/')
         ], 'orchid-extra-fields');
 
         return $this;
