@@ -16,7 +16,8 @@ class OrchidFieldsServiceProvider extends ServiceProvider
     {
         $path = dirname(__DIR__, 1) . '/resources/views/';
         $this->loadViewsFrom($path, 'platform-fields');
-
+        
+        $dashboard->registerResource('scripts', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js');
         $dashboard->registerResource('scripts', '/vendor/orchid-fields/js/orchid_fields.js');
         $dashboard->registerResource('scripts', 'https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js');
         $dashboard->registerResource('stylesheets', 'https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css');
