@@ -1,13 +1,21 @@
-// import ImageZoom from "js-image-zoom";
 import Zooming from 'zooming'
 export default class extends window.Controller {
     connect() {
         const zooming = new Zooming({
             onBeforeOpen: function () {
-                document.querySelector('.table-responsive').style.overflowX = 'visible'
+                var table = document.querySelector('.table-responsive');
+                var itHasHappenedInTable = table !== null;
+                if (itHasHappenedInTable) {
+                    document.querySelector('.table-responsive').style.overflowX = 'visible'
+                }
             },
             onClose: function () {
-                document.querySelector('.table-responsive').style.overflowX = 'auto'
+                var table = document.querySelector('.table-responsive');
+                var itHasHappenedInTable = table !== null;
+                if (itHasHappenedInTable) {
+                    document.querySelector('.table-responsive').style.overflowX = 'auto'
+                }
+
             },
             customSize: this.data.get('zoompercent') || 100 + '%'
         })
