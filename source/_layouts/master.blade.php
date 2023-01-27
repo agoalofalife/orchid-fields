@@ -76,7 +76,7 @@
         <footer class="bg-purple text-center text-sm mt-12 py-4" role="contentinfo">
             <ul class="flex flex-col md:flex-row justify-center">
                 <li class="md:mr-2 text-white">
-                    &copy; <a href="https://github.com/agoalofalife" title="agoalofalife website">agoalofalife</a> {{ date('Y') }}.
+                    &copy; <a href="https://github.com/agoalofalife" title="agoalofalife website" class="text-white">agoalofalife</a> {{ date('Y') }}.
                 </li>
             </ul>
         </footer>
