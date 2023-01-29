@@ -15,9 +15,10 @@ return function ($page, $locale) {
             'Список Fields' => new IterableObject([
 //                'url' => "docs/{$locale}/getting-started",
                 'children' => new IterableObject([
+                    'Audio' => "docs/{$locale}/fields/audio",
+                    'Image Zoom' => "docs/{$locale}/fields/image_zoom",
                     'Range' => "docs/{$locale}/fields/range",
                     'Rate' => "docs/{$locale}/fields/rate",
-                    'Image Zoom' => "docs/{$locale}/fields/image_zoom",
                 ]),
 
             ]),
