@@ -34,4 +34,4 @@ use agoalofalife\Orchid\Fields\ImageZoom;
 
 
 
-[Источник поля](https://github.com/kingdido999/zooming) 
+[Источник Field](https://github.com/kingdido999/zooming) 

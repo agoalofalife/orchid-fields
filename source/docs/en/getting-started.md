@@ -3,7 +3,7 @@ title: Introduction
 description: 
 extends: _layouts.documentation
 section: content
-locale: ru
+locale: en
 ---
 
 # Introduction {#Introduction}

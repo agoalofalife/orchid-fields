@@ -40,4 +40,4 @@ use agoalofalife\Orchid\Fields\Rate;
     ->value(5),
 ```
 
-[Источник поля](https://github.com/auxiliary/rater) 
+[Источник Field](https://github.com/auxiliary/rater) 

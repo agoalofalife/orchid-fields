@@ -3,28 +3,28 @@ title: Range
 description: Range Orchid Extra Fields
 extends: _layouts.documentation
 section: content
-locale: ru
+locale: en
 ---
 
 # Range {#Range}
-Это очень элегантное поле - которое позволяет установить максимальное и минимальное значение.
+This is a very elegant field - which allows you to set a maximum and minimum value.
 
-Поле используется в form для отправки диапазона значений.
+The field is used in form to send a range of values.
 
 <img class="block m-auto" src="/assets/fields/range/range.gif" alt="range preview" />
 
 
-## Пример
+## Example
 
 ```php
 
 use agoalofalife\Orchid\Fields\Range;
 
-// title - заголовок перед полем
-// min - минимальное значение
-// max - максимальное значение
-// hasGrid - показывать разметку вдоль линии
-// skin - стиль
+// title - title before the field
+// min - minimum value
+// max - maximal value
+// hasGrid - show marking along the line
+// skin - style
 
 Range::make('age')
     ->title('Age')
@@ -61,4 +61,4 @@ Range::make('age')
 <img class="block m-auto" src="/assets/fields/range/square.png" alt="square" />
 
 
-[Источник Field](https://github.com/IonDen/ion.rangeSlider) 
+[Field Source](https://github.com/IonDen/ion.rangeSlider) 
