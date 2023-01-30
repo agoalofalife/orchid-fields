@@ -23,12 +23,14 @@ jobs:
       - name: Install and Build 🔧
         run: |
           composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
+          vendor/bin/jigsaw build production 
           npm install --force
           npm run prod
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+      - name: Deploy 🚀          
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: build_production
+          single-commit: true
+          token: ${{ secrets.ACCESS_TOKEN }}
+          branch: gh-pages
+          folder: build_production/
