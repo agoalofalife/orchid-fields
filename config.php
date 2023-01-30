@@ -3,7 +3,7 @@
 use Illuminate\Support\Str;
 
 return [
-    'baseUrl' => 'https://agoalofalife.github.io/orchid-fields',
+    'baseUrl' => '',
     'path' => '{language}/{type}/{-title}',
     'collections' => [
         'posts-sl' => [

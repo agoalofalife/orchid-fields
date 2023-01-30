@@ -20,19 +20,23 @@ return function ($page, $locale) {
                     'Range' => "docs/{$locale}/fields/range",
                     'Rate' => "docs/{$locale}/fields/rate",
                 ]),
-
             ]),
         ]);
     }
     return new IterableObject([
-        'Getting Started' => new IterableObject([
-            'url' => "docs/{$locale}/getting-started",
+        'Introduction' => new IterableObject([
+            'url' => "/docs/{$locale}/getting-started",
             'children' => new IterableObject([
-                'Installation' => "docs/{$locale}/install",
-                'Customizing Your Site' => "docs/{$locale}/customizing-your-site",
-                'Navigation' => "docs/{$locale}/navigation",
-                'Algolia DocSearch' => "docs/{$locale}/algolia-docsearch",
-                'Custom 404 Page' => "docs/{$locale}/custom-404-page",
+                'Installing' => "docs/{$locale}/install",
+                'How to write your Field' => "docs/{$locale}/how-make-custom",
+            ]),
+        ]),
+        'List Fields' => new IterableObject([
+            'children' => new IterableObject([
+                'Audio' => "docs/{$locale}/fields/audio",
+                'Image Zoom' => "docs/{$locale}/fields/image_zoom",
+                'Range' => "docs/{$locale}/fields/range",
+                'Rate' => "docs/{$locale}/fields/rate",
             ]),
         ]),
     ]);
