@@ -23,7 +23,6 @@ jobs:
       - name: Install and Build 🔧
         run: |
           composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
-          vendor/bin/jigsaw build production 
           npm install --force
           npm run prod
 
