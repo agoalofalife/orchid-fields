@@ -2,14 +2,14 @@
 
 use TightenCo\Jigsaw\IterableObject;
 
-return function ($page, $locale) {
+return function ($page, $locale, $baseUrl) {
     if ($locale === 'ru') {
         return new IterableObject([
             'Введение' => new IterableObject([
-                'url' => "docs/{$locale}/getting-started",
+                'url' => "{$baseUrl}/docs/{$locale}/getting-started",
                 'children' => new IterableObject([
-                    'Установка' => "docs/{$locale}/install",
-                    'Как написать свой' => "docs/{$locale}/how-make-custom",
+                    'Установка' => "{$baseUrl}/docs/{$locale}/install",
+                    'Как написать свой' => "{$baseUrl}/docs/{$locale}/how-make-custom",
                 ]),
             ]),
             'Список Fields' => new IterableObject([
