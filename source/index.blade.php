@@ -24,7 +24,7 @@
 
     <div class="md:flex -mx-2 -mx-4">
         <div class="mb-8 mx-3 px-2 md:w-1/3">
-            <img src="/assets/img/icon-window.svg" class="h-12 w-12" alt="window icon">
+            <img src="{{$page->baseUrl}}/assets/img/icon-window.svg" class="h-12 w-12" alt="window icon">
 
             <h3 id="intro-laravel" class="text-2xl mb-0 text-white">Templating with <br>Laravel's Blade engine</h3>
 
@@ -32,7 +32,7 @@
         </div>
 
         <div class="mb-8 mx-3 px-2 md:w-1/3">
-            <img src="/assets/img/icon-terminal.svg" class="h-12 w-12" alt="terminal icon">
+            <img src="{{$page->baseUrl}}/assets/img/icon-terminal.svg" class="h-12 w-12" alt="terminal icon">
 
             <h3 id="intro-markdown" class="text-2xl mb-0 text-white">Use Markdown for <br>content-driven pages</h3>
 
@@ -40,7 +40,7 @@
         </div>
 
         <div class="mx-3 px-2 md:w-1/3">
-            <img src="/assets/img/icon-stack.svg" class="h-12 w-12" alt="stack icon">
+            <img src="{{$page->baseUrl}}/assets/img/icon-stack.svg" class="h-12 w-12" alt="stack icon">
 
             <h3 id="intro-mix" class="text-2xl mb-0 text-white">Compile your assets <br>using Laravel Mix </h3>
 
