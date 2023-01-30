@@ -15,28 +15,28 @@ return function ($page, $locale, $baseUrl) {
             'Список Fields' => new IterableObject([
 //                'url' => "docs/{$locale}/getting-started",
                 'children' => new IterableObject([
-                    'Audio' => "docs/{$locale}/fields/audio",
-                    'Image Zoom' => "docs/{$locale}/fields/image_zoom",
-                    'Range' => "docs/{$locale}/fields/range",
-                    'Rate' => "docs/{$locale}/fields/rate",
+                    'Audio' => "{$baseUrl}/docs/{$locale}/fields/audio",
+                    'Image Zoom' => "{$baseUrl}/docs/{$locale}/fields/image_zoom",
+                    'Range' => "{$baseUrl}/docs/{$locale}/fields/range",
+                    'Rate' => "{$baseUrl}/docs/{$locale}/fields/rate",
                 ]),
             ]),
         ]);
     }
     return new IterableObject([
         'Introduction' => new IterableObject([
-            'url' => "/docs/{$locale}/getting-started",
+            'url' => "{$baseUrl}/docs/{$locale}/getting-started",
             'children' => new IterableObject([
-                'Installing' => "docs/{$locale}/install",
-                'How to write your Field' => "docs/{$locale}/how-make-custom",
+                'Installing' => "{$baseUrl}/docs/{$locale}/install",
+                'How to write your Field' => "{$baseUrl}/docs/{$locale}/how-make-custom",
             ]),
         ]),
         'List Fields' => new IterableObject([
             'children' => new IterableObject([
-                'Audio' => "docs/{$locale}/fields/audio",
-                'Image Zoom' => "docs/{$locale}/fields/image_zoom",
-                'Range' => "docs/{$locale}/fields/range",
-                'Rate' => "docs/{$locale}/fields/rate",
+                'Audio' => "{$baseUrl}/docs/{$locale}/fields/audio",
+                'Image Zoom' => "{$baseUrl}/docs/{$locale}/fields/image_zoom",
+                'Range' => "{$baseUrl}/docs/{$locale}/fields/range",
+                'Rate' => "{$baseUrl}/docs/{$locale}/fields/rate",
             ]),
         ]),
     ]);
