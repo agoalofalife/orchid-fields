@@ -1,9 +1,8 @@
 <?php
 
 return [
-    'baseUrl' => 'https://jigsaw-docs-template.tighten.co',
+    'baseUrl' => 'https://agoalofalife.github.io/orchid-fields/',
     'production' => true,
-    'pathToAssets' => 'orchid-fields/assets/build',
 
     // DocSearch credentials
     'docsearchApiKey' => env('DOCSEARCH_KEY'),
