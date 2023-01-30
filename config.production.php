@@ -3,7 +3,7 @@
 return [
     'baseUrl' => 'https://jigsaw-docs-template.tighten.co',
     'production' => true,
-    'pathToAssets' => '/orchid-fields/assets/build',
+    'pathToAssets' => 'orchid-fields/assets/build',
 
     // DocSearch credentials
     'docsearchApiKey' => env('DOCSEARCH_KEY'),
