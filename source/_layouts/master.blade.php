@@ -20,8 +20,6 @@
             <meta name="generator" content="tighten_jigsaw_doc">
         @endif
 
-        <base href="{{ $page->baseUrl }}">
-
         <title>{{ $page->siteName }}{{ $page->title ? ' | ' . $page->title : '' }}</title>
 
         <link rel="home" href="{{ $page->baseUrl }}">
@@ -34,7 +32,7 @@
         @endif
 
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
-        <link rel="stylesheet" href="{{ $page->baseUrl . mix('css/main.css', "assets/build") }}">
+        <link rel="stylesheet" href="{{ mix('css/main.css', "assets/build") }}">
 
         @if ($page->docsearchApiKey && $page->docsearchIndexName)
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
@@ -71,7 +69,7 @@
             @yield('body')
         </main>
 
-        <script src="{{ $page->baseUrl . mix('js/main.js', 'assets/build') }}"></script>
+        <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
 
         @stack('scripts')
 
