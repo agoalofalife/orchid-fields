@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'baseUrl' => 'https://agoalofalife.github.io/orchid-fields',
+    'baseUrl' => '',
     'production' => true,
 
     // DocSearch credentials

@@ -6,7 +6,7 @@
             <div class="mt-40">
                 <h1 id="intro-docs-template" class="text-white animate-pulse ">{{ $page->siteName }}</h1>
 
-                <h2 id="intro-powered-by-jigsaw" class="font-light mt-4 text-white">Разнообразные Fields для Orchid Admin Panel</h2>
+                <h2 id="intro-powered-by-jigsaw" class="font-light mt-4 text-white">Various Fields for the Orchid Admin Panel</h2>
 
                 <p class="text-lg text-white">Immerse yourself in the magic of Orchid ✨ <br class="hidden sm:block">Use it for forms, tables and anywhere else you need it.</p>
 
