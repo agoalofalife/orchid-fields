@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'baseUrl' => '',
+    'baseUrl' => 'https://orchid-fields.dev',
     'production' => true,
 
     // DocSearch credentials

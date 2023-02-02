@@ -5,17 +5,6 @@ use Illuminate\Support\Str;
 return [
     'baseUrl' => '',
     'path' => '{language}/{type}/{-title}',
-    'collections' => [
-        'posts-sl' => [
-            'type' => 'blog',
-            'language' => 'sl',
-        ],
-
-        'posts-en' => [
-            'type' => 'blog',
-            'language' => 'en',
-        ],
-    ],
     'production' => false,
     'siteName' => 'Extra Fields',
     'siteDescription' => 'Various fields for Laravel Orchid Admin',
