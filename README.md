@@ -1,6 +1,8 @@
-# Orchid Fields
 
-Extra library which add different fields in Laravel Orchid Platform
+<h2 align="center" href="https://orchid.software/">Orchid Extra Fields</h2>
+<p align="center">Extra library which add different fields in Laravel Orchid Platform</p>
+<h4 align="center">For the full documentation, visit <a href="http://orchid.software">orchid.software</a>.</h4>
+
 
 ## Installation
 
@@ -15,63 +17,19 @@ Next, you should publish resources files using the `vendor:publish` Artisan comm
 ```bash
  php artisan vendor:publish --provider="agoalofalife\\Orchid\\OrchidFieldsServiceProvider" 
 ```
+### GitHub
 
-# Fields
-
-## Range
-
-#### It's very elegant field, which can set min and max value.
-
-<a href="https://raw.githubusercontent.com/agoalofalife/orchid-fields/main/.github/IMAGES/range.png">
-  <img src="https://raw.githubusercontent.com/agoalofalife/orchid-fields/main/.github/IMAGES/range.png" alt="range" align="center" />
-</a>
-
-Example:
-
-```php
-use agoalofalife\Orchid\Fields\Range;
-
-Range::make('age')
-    ->title('Age')
-    ->min(18)
-    ->max(50)
-    ->hasGrid(true);
-```
+* Create [issues](https://github.com/agoalofalife/orchid-fields/issues) to ask questions or report problems.
 
 
-## Rate
+### Telegram User Groups
 
-#### It's very elegant field, which can set min and max value.
-
-<a href="https://raw.githubusercontent.com/agoalofalife/orchid-fields/main/.github/IMAGES/rate.png">
-  <img src="https://raw.githubusercontent.com/agoalofalife/orchid-fields/main/.github/IMAGES/rate.png" alt="range" align="center" />
-</a>
-
-Example:
-
-```php
-use agoalofalife\Orchid\Fields\Rate;
-
-Rate::make('rate')
-    ->count(4)
-    ->readonly(true)
-    ->value(5);
-```
+* [Global Community](https://t.me/orchid_community)
+* [Russian Community](https://t.me/orchid_russian_community)
 
 
-## Image Zoom
+## License
 
-#### You can watch full [documentation](https://github.com/kingdido999/zooming)
+Orchid is covered by the MIT license. Check [our license](LICENSE) for further information.
 
-
-Example:
-
-```php
-use agoalofalife\Orchid\Fields\ImageZoom;
-
-ImageZoom::make('image')
-    ->value('https://host/picture.jpg')
-    ->zoomPercent(100)
-    ->widthPercent(70);
-```
 
