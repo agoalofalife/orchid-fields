@@ -22,5 +22,5 @@ composer require agoalofalife/orchid-fields
 The second command copies the js files to the public folder.
 
 ```bash
- php artisan vendor:publish --provider="agoalofalife\\Orchid\\OrchidFieldsServiceProvider" 
+ php artisan vendor:publish --tag=orchid-extra-fields
 ```
