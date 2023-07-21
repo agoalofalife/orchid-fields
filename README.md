@@ -15,7 +15,7 @@ composer require agoalofalife/orchid-fields
 Next, you should publish resources files using the `vendor:publish` Artisan command. 
 
 ```bash
- php artisan vendor:publish --provider="agoalofalife\\Orchid\\OrchidFieldsServiceProvider" 
+ php artisan vendor:publish --tag=orchid-extra-fields
 ```
 ### GitHub
 
