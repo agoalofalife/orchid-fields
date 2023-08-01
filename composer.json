@@ -10,7 +10,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "orchid/platform": "^13.9"
+        "orchid/platform": "^14.0"
     },
     "autoload": {
         "psr-4": {
