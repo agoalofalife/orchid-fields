@@ -25,14 +25,14 @@ use agoalofalife\Orchid\Fields\Range;
 // value - url to source
 // heightByPercent - size avatar by percents
 // nameAvatar - text under a avatar like a "title"
-// sizeTitle - size a title
+// fontSizeByPx - size a title like font-size and measured by px
 // left or right or center - position avatar on layout
 
 Avatar::make('test')
         ->value("https://avatars.githubusercontent.com/u/15719824?v=4")
         ->heightByPercent(6)
         ->nameAvatar('Ilia Chubarov')
-        ->sizeTitle(5)
+        ->fontSizeByPx(15)
         ->left(),
 ```
 
