@@ -9,6 +9,7 @@ return [
     ]],
     'List Fields' => [
         'children' => [
+            'Avatar' => '/docs/fields/avatar',
             'Audio' => "/docs/fields/audio",
             'Image Zoom' => "/docs/fields/image_zoom",
             'Range' => "/docs/fields/range",
