@@ -25,7 +25,7 @@ class Avatar extends Field
      * @var array
      */
     protected $attributes = [
-        'sizeTitle' => 5,
+        'fontSizeByPx' => 15,
         'heightByPercent' => 50,
         'nameAvatar' => 'name',
         'left' => true,
