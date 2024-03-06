@@ -1,7 +1,7 @@
 
 <h2 align="center" href="https://orchid.software/">Orchid Extra Fields</h2>
 <p align="center">Extra library which add different fields in Laravel Orchid Platform</p>
-<h4 align="center">For the full documentation, visit <a href="https://orchid-fields.dev/">orchid-fields.dev</a></h4>
+<h4 align="center">For the full documentation, visit <a href="https://fields.orchid.software">fields.orchid.software</a></h4>
 
 
 ## Installation
