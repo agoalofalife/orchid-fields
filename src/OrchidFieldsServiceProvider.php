@@ -4,8 +4,10 @@ declare(strict_types=1);
 
 namespace agoalofalife\Orchid;
 
+use agoalofalife\Orchid\Layouts\TreeTable;
 use Illuminate\Support\ServiceProvider;
 use Orchid\Platform\Dashboard;
+use Orchid\Screen\LayoutFactory;
 
 class OrchidFieldsServiceProvider extends ServiceProvider
 {
@@ -21,11 +23,11 @@ class OrchidFieldsServiceProvider extends ServiceProvider
         $dashboard->registerResource('scripts', asset('/vendor/orchid-fields/js/orchid_fields.js'));
         $dashboard->registerResource('scripts', 'https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js');
         $dashboard->registerResource('stylesheets', 'https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css');
-        // tree table
-        $dashboard->registerResource(
-            'stylesheets',
-            'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css'
-        );
+
+        // tree table https://www.jqueryscript.net/table/simple-tree-table.html
+        LayoutFactory::macro('tableTree', function ($key, $columns, $nameId = 'id') {
+            return new TreeTable($key, $columns, $nameId);
+        });
         $this->registerAssets();
     }
 

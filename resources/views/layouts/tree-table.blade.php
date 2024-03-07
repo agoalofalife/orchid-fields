@@ -37,9 +37,12 @@
 
             @foreach($rows as $source)
                 <tr
-                        data-id="{{ $loop->index +=1 }}"
-                        data-parent="{{  $source->getContent('parent') }}"
-                        data-level="{{ $source->getContent('level') }}">
+                    @if($source->getContent('parent') === $source->getContent($nameId) )
+                        data-node-id="{{ $source->getContent($nameId) }}"
+                    @else
+                        data-node-id="{{ $source->getContent($nameId) }}" data-node-pid="{{  $source->getContent('parent') }}"
+                    @endif
+                    >
                     @foreach($columns as $column)
                         @if ($loop->first)
                             {{--  mark this is first column--}}
@@ -90,3 +93,9 @@
 
     @endif
 </div>
+
+<style>
+    .simple-tree-table-empty .simple-tree-table-icon{
+         opacity: 0;
+    }
+</style>

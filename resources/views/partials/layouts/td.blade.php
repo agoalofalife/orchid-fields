@@ -1,13 +1,15 @@
 <td class="text-{{$align}} @if(!$width) text-truncate @endif"
-    @if($isFirst)
-        data-column="tree-level"
-    @else
-        data-column="{{ $slug }}"
-    @endif
     colspan="{{ $colspan }}"
-    @empty(!$width)style="min-width:{{ is_numeric($width) ? $width . 'px' : $width }};"@endempty
+    style="
+    @empty(!$width)
+    min-width:{{ is_numeric($width) ? $width . 'px' : $width }};
+    @endempty
+    @if($isFirst)
+    display:flex;
+    @endif
+    "
 >
-    <div>
+    <div style="padding-left: 2%">
         @isset($render)
             {!! $value !!}
         @else
