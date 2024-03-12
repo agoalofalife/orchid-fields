@@ -29,6 +29,8 @@ class TDTree extends TD
             'slug' => $this->sluggable(),
             'width' => $this->width,
             'colspan' => $this->colspan,
+            'style'   => $this->style,
+            'class'   => $this->class,
         ]);
     }
 }

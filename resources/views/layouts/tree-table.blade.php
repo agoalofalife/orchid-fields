@@ -9,7 +9,7 @@
 @endempty
 
 <div class="bg-white rounded shadow-sm mb-3"
-     data-controller="table-tree"
+     data-controller="table-tree table"
      data-table-slug="{{$slug}}"
 >
 
