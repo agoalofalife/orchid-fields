@@ -13,7 +13,13 @@
      data-table-slug="{{$slug}}"
 >
 
-    <div class="table-responsive">
+    <div id="table-tree-loader" class="d-flex justify-content-center align-items-center" style="height: 400px">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <div class="table-responsive d-none" id="table-tree" >
         <table @class([
                     'table',
                     'tree-table',
@@ -32,12 +38,11 @@
                 </tr>
                 </thead>
             @endif
-
             <tbody>
 
             @foreach($rows as $source)
                 <tr
-                    @if($source->getContent('parent') === $source->getContent($nameId) )
+                    @if($source->getContent('parent') === $source->getContent($nameId))
                         data-node-id="{{ $source->getContent($nameId) }}"
                     @else
                         data-node-id="{{ $source->getContent($nameId) }}" data-node-pid="{{  $source->getContent('parent') }}"

@@ -9,12 +9,18 @@ export default class extends window.Controller {
         const hiddenColumns = JSON.parse(localStorage.getItem(this.slug));
 
         this.hiddenColumns = hiddenColumns || [];
+
+        // remove preloader
+        document.getElementById('table-tree-loader').classList.add('d-none');
+        document.getElementById('table-tree').classList.remove('d-none');
+
     }
 
     /**
      *
      */
     connect() {
+
         this.allowDefaultHidden();
         this.renderColumn();
 

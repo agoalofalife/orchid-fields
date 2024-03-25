@@ -15,15 +15,11 @@ class TreeTable extends Table
      * @var string
      */
     protected $template = 'platform-fields::layouts.tree-table';
-
-    public function __construct(string $target, protected array $columns, protected $nameId = 'id')
-    {
-        $this->target = $target;
-    }
+    protected $nameId = 'id';
 
     protected function columns(): iterable
     {
-        return $this->columns;
+        return [];
     }
 
     public function build(Repository $repository)

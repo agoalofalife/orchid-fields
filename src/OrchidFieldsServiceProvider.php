@@ -8,6 +8,7 @@ use agoalofalife\Orchid\Layouts\TreeTable;
 use Illuminate\Support\ServiceProvider;
 use Orchid\Platform\Dashboard;
 use Orchid\Screen\LayoutFactory;
+use Orchid\Screen\Layouts\Table;
 
 class OrchidFieldsServiceProvider extends ServiceProvider
 {
@@ -25,8 +26,26 @@ class OrchidFieldsServiceProvider extends ServiceProvider
         $dashboard->registerResource('stylesheets', 'https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css');
 
         // tree table https://www.jqueryscript.net/table/simple-tree-table.html
-        LayoutFactory::macro('tableTree', function ($key, $columns, $nameId = 'id') {
-            return new TreeTable($key, $columns, $nameId);
+        LayoutFactory::macro('treeTable', function (string $target, array $columns, string $nameId = 'id') {
+            return new class($target, $columns, $nameId) extends TreeTable
+            {
+                /**
+                 * @var array
+                 */
+                protected $columns;
+
+                public function __construct(string $target, array $columns, string $nameId)
+                {
+                    $this->target = $target;
+                    $this->columns = $columns;
+                    $this->nameId = $nameId;
+                }
+
+                public function columns(): array
+                {
+                    return $this->columns;
+                }
+            };
         });
         $this->registerAssets();
     }
