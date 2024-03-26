@@ -15,5 +15,10 @@ return [
             'Range' => "/docs/fields/range",
             'Rate' => "/docs/fields/rate",
         ]
+    ],
+    'Layouts' => [
+        'children' => [
+            'Table Tree' => "/docs/layouts/table-tree",
+        ]
     ]
 ];
