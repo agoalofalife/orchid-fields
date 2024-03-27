@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Table Tree is the extra component to organize tree table">
+
+        <meta property="og:site_name" content="Extra Fields"/>
+        <meta property="og:title" content="Table Tree | Extra Fields"/>
+        <meta property="og:description" content="Table Tree is the extra component to organize tree table"/>
+        <meta property="og:url" content="https://orchid-fields.dev/docs/layouts/table-tree"/>
+        <meta property="og:image" content="/assets/img/logo.png"/>
+        <meta property="og:type" content="website"/>
+
+        <meta name="twitter:image:alt" content="Extra Fields">
+        <meta name="twitter:card" content="summary_large_image">
+
+        
+        <title>Extra Fields | Table Tree</title>
+
+        <link rel="home" href="https://orchid-fields.dev">
+        <link rel="icon" href="/favicon.ico">
+
+        
+                    <!-- Insert analytics code here -->
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=02265590f23bc4adbfa8">
+
+            </head>
+
+    <body class="flex flex-col justify-between min-h-screen bg-purple text-gray-800 leading-normal font-sans">
+        <header class="flex items-center shadow bg-purple  h-24 mb-8 py-4" role="banner">
+            <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
+                <div class="flex items-center p-3 p-5 text-center">
+                    <a href="https://orchid-fields.dev" title="Extra Fields home" class="inline-flex items-center">
+                        <img class="h-8 md:h-5 mr-3" src="https://orchid.software/img/next/logo-full.svg" alt="Extra Fields logo" />
+                        <h1 class="text-lg md:text-2xl text-white font-semibold  my-0 pr-4">Extra Fields</h1>
+                    </a>
+                </div>
+                <div class="flex flex-1 justify-end items-center text-right md:pl-10">
+                    <a href="https://github.com/agoalofalife/orchid-fields" class="nav-link">
+                        <svg width="2.5em" height="2.5em" viewBox="0 0 30 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.1367 23.0703C10.1367 22.9531 10.0195 22.8359 9.84375 22.8359C9.66797 22.8359 9.55078 22.9531 9.55078 23.0703C9.55078 23.1875 9.66797 23.3047 9.84375 23.2461C10.0195 23.2461 10.1367 23.1875 10.1367 23.0703ZM8.32031 22.7773C8.32031 22.8945 8.4375 23.0703 8.61328 23.0703C8.73047 23.1289 8.90625 23.0703 8.96484 22.9531C8.96484 22.8359 8.90625 22.7188 8.73047 22.6602C8.55469 22.6016 8.37891 22.6602 8.32031 22.7773ZM10.957 22.7188C10.7812 22.7188 10.6641 22.8359 10.6641 23.0117C10.6641 23.1289 10.8398 23.1875 11.0156 23.1289C11.1914 23.0703 11.3086 23.0117 11.25 22.8945C11.25 22.7773 11.0742 22.6602 10.957 22.7188ZM14.7656 0.21875C6.67969 0.21875 0.46875 6.42969 0.46875 14.5156C0.46875 21.0195 4.51172 26.5859 10.3711 28.5781C11.1328 28.6953 11.3672 28.2266 11.3672 27.875C11.3672 27.4648 11.3672 25.4727 11.3672 24.2422C11.3672 24.2422 7.26562 25.1211 6.38672 22.4844C6.38672 22.4844 5.74219 20.7852 4.80469 20.375C4.80469 20.375 3.45703 19.4375 4.86328 19.4375C4.86328 19.4375 6.32812 19.5547 7.14844 20.9609C8.4375 23.2461 10.5469 22.6016 11.4258 22.1914C11.543 21.2539 11.8945 20.6094 12.3633 20.1992C9.08203 19.8477 5.74219 19.3789 5.74219 13.7539C5.74219 12.1133 6.21094 11.3516 7.14844 10.2969C6.97266 9.88672 6.50391 8.36328 7.32422 6.3125C8.49609 5.96094 11.3672 7.89453 11.3672 7.89453C12.5391 7.54297 13.7695 7.42578 15 7.42578C16.2891 7.42578 17.5195 7.54297 18.6914 7.89453C18.6914 7.89453 21.5039 5.90234 22.7344 6.3125C23.5547 8.36328 23.0273 9.88672 22.9102 10.2969C23.8477 11.3516 24.4336 12.1133 24.4336 13.7539C24.4336 19.3789 20.9766 19.8477 17.6953 20.1992C18.2227 20.668 18.6914 21.5469 18.6914 22.9531C18.6914 24.8867 18.6328 27.3477 18.6328 27.8164C18.6328 28.2266 18.9258 28.6953 19.6875 28.5195C25.5469 26.5859 29.5312 21.0195 29.5312 14.5156C29.5312 6.42969 22.9102 0.21875 14.7656 0.21875ZM6.15234 20.4336C6.03516 20.4922 6.09375 20.668 6.15234 20.7852C6.26953 20.8438 6.38672 20.9023 6.50391 20.8438C6.5625 20.7852 6.5625 20.6094 6.44531 20.4922C6.32812 20.4336 6.21094 20.375 6.15234 20.4336ZM5.50781 19.9648C5.44922 20.082 5.50781 20.1406 5.625 20.1992C5.74219 20.2578 5.85938 20.2578 5.91797 20.1406C5.91797 20.082 5.85938 20.0234 5.74219 19.9648C5.625 19.9062 5.56641 19.9062 5.50781 19.9648ZM7.38281 22.0742C7.32422 22.1328 7.32422 22.3086 7.5 22.4258C7.61719 22.543 7.79297 22.6016 7.85156 22.4844C7.91016 22.4258 7.91016 22.25 7.79297 22.1328C7.67578 22.0156 7.5 21.957 7.38281 22.0742ZM6.73828 21.1953C6.62109 21.2539 6.62109 21.4297 6.73828 21.5469C6.85547 21.6641 6.97266 21.7227 7.08984 21.6641C7.14844 21.6055 7.14844 21.4297 7.08984 21.3125C6.97266 21.1953 6.85547 21.1367 6.73828 21.1953Z"></path>
+                        </svg>
+                    </a>
+                </div>
+
+
+
+
+
+            </div>
+
+                <button class="flex justify-center items-center bg-blue-500 border border-blue-500 h-10 mr-4 px-5 rounded-full lg:hidden focus:outline-none"
+    onclick="navMenu.toggle()"
+>
+    <svg id="js-nav-menu-show" xmlns="http://www.w3.org/2000/svg"
+        class="fill-current text-white h-9 w-4" viewBox="0 0 32 32"
+    >
+        <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+    </svg>
+
+    <svg id="js-nav-menu-hide" xmlns="http://www.w3.org/2000/svg"
+        class="hidden fill-current text-white h-9 w-4" viewBox="0 0 36 30"
+    >
+        <polygon points="32.8,4.4 28.6,0.2 18,10.8 7.4,0.2 3.2,4.4 13.8,15 3.2,25.6 7.4,29.8 18,19.2 28.6,29.8 32.8,25.6 22.2,15 "/>
+    </svg>
+</button>
+
+        </header>
+
+        <main role="main" class="w-full flex-auto">
+            <section class="container max-w-8xl mx-auto px-6 md:px-8 py-4 bg-white rounded-lg rounded-md">
+    <div class="flex flex-col lg:flex-row p-5">
+        <nav id="js-nav-menu" class="nav-menu hidden lg:block">
+            <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/getting-started"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Introduction
+        </a>
+    
+            
+        <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/install"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Installing
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/how-make-custom"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            How to write your Field
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+            <li class="pl-4">
+            
+        <p class="nav-menu__item text-gray-600">List Fields</p>
+    
+            
+        <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/fields/avatar"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Avatar
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/fields/audio"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Audio
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/fields/image_zoom"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Image Zoom
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/fields/range"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Range
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/fields/rate"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Rate
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+            <li class="pl-4">
+            
+        <p class="nav-menu__item text-gray-600">Layouts</p>
+    
+            
+        <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/layouts/table-tree"
+            class="lvl1  active font-semibold text-blue-500 nav-menu__item hover:text-blue-500"
+        >
+            Table Tree
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+    </ul>
+        </nav>
+
+        <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
+            <h1 id="TreeTable">Tree Table</h1>
+
+<p>This is an additional component that extends the capabilities of a regular table to build tree records.</p>
+
+<p>This table does not limit you in levels, you can make as many levels as you want. 🙂</p>
+
+<p><img class="block m-auto" src="/assets/layouts/table-tree/tabltree-demonstration.gif" alt="table tree preview" /></p>
+
+<blockquote>
+  <p>This table is rendered through the server, if you have more than 1000 rows, you will have to wait and see the beautiful preloader 😎</p>
+</blockquote>
+
+<h2>User Example</h2>
+
+<p>There are two steps to follow, that is to describe the table and the data it will render.</p>
+
+<h3>Facade</h3>
+
+<p>To write a table, you will need the <code>treeTable</code> method and <code>TDTree</code> columns, which repeat the standard Orchid functionality.</p>
+
+<pre><code class="language-php"><br />use Orchid\Support\Facades\Layout;
+use agoalofalife\Orchid\Layouts\TDTree;
+
+ Layout::treeTable('subscriptions', [
+                TDTree::make('date'),
+                TDTree::make('subscribers'),
+                TDTree::make('likes'),
+        ], nameId: 'id'),
+</code></pre>
+
+<h3>Table class</h3>
+
+<pre><code class="language-php">namespace App\Orchid\Layouts;
+
+use Orchid\Screen\TD;
+use Orchid\Screen\Layouts\Table;
+use agoalofalife\Orchid\Layouts\TreeTable;
+use agoalofalife\Orchid\Layouts\TDTree;
+
+class PatientListLayout extends TreeTable
+{
+    // name of unique column which will show in the first column
+    protected $nameId = 'id';
+
+
+    /**
+     * Data source.
+     *
+     * The name of the key to fetch it from the query.
+     * The results of which will be elements of the table.
+     *
+     * @var string
+     */
+    protected $target = 'patients';
+
+    /**
+     * @return TD[]
+     */
+    protected function columns() : array
+    {
+        return [
+              TDTree::make('name')-&gt;alignRight(),
+              TDTree::make('created_at')-&gt;sort(),      
+        ];
+    }
+}
+</code></pre>
+
+<p>Everything is very simple and corresponds to the standard Orchid documentation.</p>
+
+<p>However, it's a little more complicated with data. 🤔</p>
+
+<p>There are two main keys <code>id</code> and <code>parent</code>. 
+Parent points to the parent data, or rather its id.
+Id is a unique field, which is used to set parent.</p>
+
+<blockquote>
+  <p>id is the <code>$nameId</code> property your class</p>
+</blockquote>
+
+<p><strong>Example with data</strong></p>
+
+<pre><code class="language-php">     'table1' =&gt; [
+                new Repository([
+                    'id' =&gt; 1,
+                    'parent' =&gt; 1,
+                    'date' =&gt; 'Oleg',
+                    'subscribers' =&gt; '',
+                    'likes' =&gt; '',
+                ]),
+                new Repository([
+                    'id' =&gt; 2,
+                    'parent' =&gt; 1,
+                    'date' =&gt; '01.2024',
+                    'subscribers' =&gt; '123412',
+                    'likes' =&gt; '2343234',
+                ]),
+                new Repository([
+                    'id' =&gt; 3,
+                    'parent' =&gt; 2,
+                    'date' =&gt; '01.01.2024',
+                    'subscribers' =&gt; '23434234234',
+                    'likes' =&gt; '1',
+                ]),
+                new Repository([
+                    'id' =&gt; 5,
+                    'date' =&gt; 'Ivan',
+                    'subscribers' =&gt; '1634234',
+                    'likes' =&gt; '23',
+                ]),
+    ]
+</code></pre>
+
+<p>Notice the two keys in the data are id and parent. They are very important for building a correct table structure. Parent points to the id of the parent, id is unique information about the current data block. What is important: the child data should go strictly in the sequence below the parent data, at the moment it works like this!</p>
+
+<h3>Custom id</h3>
+
+<p>If you have another unique field, you can pass its name when creating the table, for example below instead of <strong>id</strong>, the unique field would be <strong>uuid</strong></p>
+
+<pre><code class="language-php">  Layout::tableTree('table1', [
+                TDTree::make('uuid'),
+                TDTree::make('date'),
+                TDTree::make('subscribers',),
+                TDTree::make('likes'),
+            ], 'uuid'),
+</code></pre>
+        </div>
+    </div>
+</section>
+        </main>
+
+        <script src="/assets/build/js/main.js?id=07c06e86399bc87f6c3c"></script>
+
+        <script>
+    const navMenu = {
+        toggle() {
+            const menu = document.getElementById('js-nav-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('lg:block');
+            document.getElementById('js-nav-menu-hide').classList.toggle('hidden');
+            document.getElementById('js-nav-menu-show').classList.toggle('hidden');
+        },
+    }
+</script>
+
+        <footer class="bg-purple text-center text-sm mt-12 py-4" role="contentinfo">
+            <ul class="flex flex-col md:flex-row justify-center">
+                <li class="md:mr-2 text-white">
+                    &copy; <a href="https://github.com/agoalofalife" title="agoalofalife website" class="text-white">agoalofalife</a> 2024.
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
