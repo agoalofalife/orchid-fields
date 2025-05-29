@@ -16,7 +16,8 @@ export default class extends window.Controller {
                     table.style.overflow = 'visible';
                 }
                 if (itHasHappenedInPostForm) {
-                    form.classList.remove('overflow-hidden');
+                    var targetElement = document.querySelector('[data-controller="table"]')
+                    targetElement.classList.remove('overflow-hidden');
                 }
             },
             onClose: function() {
@@ -33,7 +34,8 @@ export default class extends window.Controller {
                     table.style.overflow = 'hidden';
                 }
                 if (itHasHappenedInPostForm) {
-                    form.classList.add('overflow-hidden');
+                    var targetElement = document.querySelector('[data-controller="table"]')
+                    targetElement.classList.add('overflow-hidden');
                 }
             },
             customSize: this.data.get('zoompercent') || 100 + '%'
