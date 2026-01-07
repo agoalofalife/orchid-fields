@@ -34,6 +34,7 @@ export default class extends window.Controller {
 
         $(this.element).simpleTreeTable({
             opened:'close',
+            iconPosition: '> :first-child > :first-child',
         });
     }
 
